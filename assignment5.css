@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#animate {
+    height: 200px;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+div {
+    list-style-type: none;
+
+}
+
+.sprite1 {
+    background: url("images/sprite1.jpg") no-repeat -191px -34px;
+    width: 58px;
+    height: 74px;
+    margin: 5px;
+    float: left;
+}
+
+.sprite2 {
+    background: url('images/sprite1.jpg') no-repeat -119px -125px;
+    width: 85px;
+    height: 79px;
+    margin: 5px;
+    float: right;
+    clear: left;
+}
+
+
+.sprite3 {
+    background: url("images/sprite1.jpg") no-repeat -352px -124px;
+    width: 91px;
+    height: 80px;
+    margin: 5px;
+}

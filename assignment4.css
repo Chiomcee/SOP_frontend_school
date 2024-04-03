@@ -1,0 +1,53 @@
+body {
+    background-color: lightblue;
+    margin: 50px 100px;
+}
+
+.container {
+    display: inline-flex;
+}
+
+.container .item {
+    height: 200px;
+    width: 200px;
+    padding: 20px 30px;
+    margin-right: 200px;/* set margin to be equal to the width of the containter */
+}
+
+.item {
+    border-style: ridge dashed;
+    border-width: 10px;
+    border-color: brown;
+}
+
+.container .item:nth-child(1) {
+    background-color: yellow; /* first container stands out more */
+}
+
+.container .item:nth-child(2) {
+    border-top: 10px solid red;
+    border-right: 10px ridge green;
+    border-bottom: 3px dashed blue;
+    border-left: 7px double orange;
+    background: url('images/bg1.jpg') no-repeat center/cover;
+
+}
+
+#ulist {
+    list-style-type: armenian;
+    list-style-image: url('../images/techa.jpg');
+    list-style-position: outside;
+}
+
+/* 
+        The Box Model - Container 1
+        Total element width = width + left padding + right padding + left border + right border + left margin + right margin.
+        Total element width = 200px + 30px + 30px +  10px + 10px + 0px + 0px = 280px
+
+        Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
+        Total element height = 200px + 20px + 20px + 10px + 10px + 0px + 0px = 260px
+    
+        Container 2
+        Total element width = 200px + 30px + 30px +  7px + 10px + 0px + 0px = 277px
+        Total element height = 200px + 20px + 20px + 10px + 3px + 0px + 0px = 253px
+*/

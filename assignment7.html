@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Chioma Igwe">
+    <meta name="keyword" content="HTML 5, CSS 3, JavaScript, Tables and forms">
+    <meta name="description" content="page holding assignment on forms in html5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form collecting information</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ece6e6;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input, select {
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 8px;
+            border: 1px solid black;
+            font-size: 16px;
+        }
+
+        button[type="reset"] {
+            background-color: aqua;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+        button[type="submit"] {
+            background-color: #bfccda;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #67819e;
+        }
+    </style>
+</head>
+<body>
+    <h2>Assessment Form</h2>
+    <fieldset>
+        <legend>Mental Health Assessment Form</legend>
+        <form action="index.html" method="POST" accept-charset="">
+                <div class="input-group">
+                    <label for="gender">Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </div>
+            
+                <div class="input-group">
+                    <label for="events">Events in the last 2 weeks:</label><br>
+                    <input type="checkbox" id="event1" name="events" value="interest">Little interest or pleasure in doing things
+                    <input type="checkbox" id="event2" name="events" value="depressed">Feeling down, depressed, or hopeless
+                    <input type="checkbox" id="event3" name="events" value="sleep">Trouble falling or staying asleep, or sleeping too much
+                    <input type="checkbox" id="event4" name="events" value="energy">Feeling tired or having little energy
+                    <input type="checkbox" id="event5" name="events" value="appetite">Poor appetite or overeating
+                    <input type="checkbox" id="event6" name="events" value="self-esteem">Feeling bad about yourself or that you are a failure
+                    <input type="checkbox" id="event7" name="events" value="concentration">Trouble concentrating on things
+                    <input type="checkbox" id="event8" name="events" value="movement">Moving or speaking slowly or being fidgety/restless
+                    <input type="checkbox" id="event9" name="events" value="self-harm">Thoughts of self-harm or suicide
+                </div><br/>
+
+                <label for="fillDate">Date the form was filled:</label>
+                <input type="date" id="fillDate" name="fillDate" required>
+            
+                <label for="sessions">Number of sessions:</label>
+                <select id="sessions" name="sessions" disabled>
+                    <option value="1">1 session</option>
+                </select>
+            
+                <label for="symptoms">Symptoms:</label>
+                <input list="symptomsList">
+                <datalist id="symptomsList">
+                    <option value="Sore throat">
+                    <option value="Body aches">
+                    <option value="Shortness of breath">
+                    <option value="Loss of taste or smell">
+                </datalist><br><br>
+                
+                <button type="reset" name="reset">Reset</button>
+                <button type="submit" name="button">Submit</button>
+        </form>
+    </fieldset>
+    
+</body>
+</html>
